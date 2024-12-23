@@ -1,0 +1,40 @@
+﻿<Window x:Class="V02_Grid_Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V02_Grid_Control"
+        xmlns:menuBar="clr-namespace:V02_Grid_Control.View.Menu_Bar"
+        mc:Ignorable="d"
+        Title="Visual Studio" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <menuBar:MenuBar/>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="DarkGray" Grid.Row="1"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="LightGray"/>
+            
+            <Rectangle Grid.Column="2" Fill="LightGray"/>
+        </Grid>
+
+        <Rectangle Fill="Black" Grid.Row="2"/>
+    </Grid>
+</Window>

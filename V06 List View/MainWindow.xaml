@@ -1,0 +1,27 @@
+﻿<Window x:Class="V06_List_View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V06_List_View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Name="txtInput" Margin="15" FontSize="18" VerticalContentAlignment="Center"/>
+        <Button Grid.Column="1" Name="btnAdd" HorizontalAlignment="Left" Width="100" Height="50" Content="Add" Margin="5" Click="btnAdd_Click" />
+        <Button Grid.Column="1" Name="btnDel" HorizontalAlignment="Center" Width="100" Height="50" Content="Delete" Click="btnDel_Click"/>
+        <Button Grid.Column="1" Name="btnClr" HorizontalAlignment="Right" Width="100" Height="50" Content="Clear All" Margin="0,0,5,0" Click="btnClr_Click"/>
+
+        <ListView Name="lvEntries" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="Multiple"/>
+
+    </Grid>
+</Window>
