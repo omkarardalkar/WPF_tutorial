@@ -68,4 +68,3 @@ The solution is developed using C# (100% of codebase as shown in repository stat
 Repository maintained by Omkar Ardalkar
 
 ---
-**Note**: Please ensure you have the necessary permissions to access this private repository.
